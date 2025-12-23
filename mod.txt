@@ -1,0 +1,36 @@
+{
+	"name": "Assault Intel HUD",
+	"description": "Standalone mini HUD with assault director telemetry (phase, timers, dispatch, drama).",
+	"author": "YALOKGAR",
+	"version": "0.1.1",
+	"blt_version": 2,
+	"priority": 45,
+	"color": "255 160 60",
+	"hooks": [
+		{ "hook_id": "lib/setups/gamesetup", "script_path": "lua/assault_intel.lua" }
+	],
+	"keybinds": [
+		{
+			"keybind_id": "assaultintel_toggle",
+			"name": "Assault Intel: Toggle",
+			"description": "Show/hide Assault Intel HUD.",
+			"script_path": "lua/keybinds/toggle.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"show_in_menu": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "assaultintel_mode",
+			"name": "Assault Intel: Toggle Mode",
+			"description": "Toggle compact/verbose mode.",
+			"script_path": "lua/keybinds/toggle_mode.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"show_in_menu": true,
+			"localized": false
+		}
+	]
+}
+
+
